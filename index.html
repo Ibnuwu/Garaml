@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garam Laut - Ibnuwu</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Lora:ital,wght@0,400;0,600;1,400&display=swap"
+        rel="stylesheet">
+
+    <style>
+        :root {
+            --bg-color: #fdfcf8;
+            --text-color: #2c2c2c;
+            --text-muted: #737373;
+            --border-color: #e5e5e5;
+            --accent-color: #d97706;
+            --link-hover: #b45309;
+        }
+
+        body.dark-theme {
+            --bg-color: #121212;
+            --text-color: #e0e0e0;
+            --text-muted: #888888;
+            --border-color: #333333;
+            --accent-color: #fbbf24;
+            --link-hover: #fcd34d;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            transition: background-color 0.4s ease, color 0.4s ease;
+        }
+
+        .progress-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: transparent;
+            z-index: 100;
+        }
+
+        .progress-bar {
+            height: 100%;
+            background: var(--accent-color);
+            width: 0%;
+            transition: width 0.1s;
+        }
+
+        .container {
+            max-width: 680px;
+            margin: 0 auto;
+            padding: 50px 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 24px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        h1 {
+            font-family: 'Lora', serif;
+            font-size: 2.8rem;
+            font-weight: 600;
+            margin: 0 0 12px 0;
+            color: var(--text-color);
+            letter-spacing: -0.02em;
+        }
+
+        .meta {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin-bottom: 24px;
+        }
+
+        .theme-btn {
+            background: none;
+            border: 1px solid var(--border-color);
+            color: var(--text-color);
+            padding: 8px 18px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 0.85rem;
+            transition: all 0.2s;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .theme-btn:hover {
+            background-color: var(--border-color);
+        }
+
+        article p {
+            font-family: 'Lora', serif;
+            font-size: 1.2rem;
+            line-height: 1.8;
+            margin-bottom: 22px;
+            text-align: left;
+            color: var(--text-color);
+        }
+
+        .story-link {
+            color: var(--accent-color);
+            text-decoration: none;
+            border-bottom: 1px dashed var(--accent-color);
+            transition: all 0.2s ease;
+        }
+
+        .story-link:hover {
+            color: var(--link-hover);
+            border-bottom: 1px solid var(--link-hover);
+            background-color: rgba(217, 119, 6, 0.05);
+        }
+
+        body.dark-theme .story-link:hover {
+            background-color: rgba(251, 191, 36, 0.1);
+        }
+
+        footer {
+            margin-top: 60px;
+            text-align: center;
+            padding-top: 24px;
+            border-top: 1px solid var(--border-color);
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 30px 20px;
+            }
+
+            h1 {
+                font-size: 2.2rem;
+            }
+
+            article p {
+                font-size: 1.1rem;
+                line-height: 1.7;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="progress-container">
+        <div class="progress-bar" id="progressBar"></div>
+    </div>
+
+    <div class="container">
+        <header>
+            <h1>Garam Laut</h1>
+            <div class="meta">
+                <span>Oleh Ibnuwu</span> • <span>28 Maret 2026</span>
+            </div>
+            <button class="theme-btn" id="themeToggle">🌓 Mode Gelap</button>
+        </header>
+
+        <article>
+            <p>"Gilak! Woi Ceng, Win, di-pause dulu Game <a href="https://id.wikipedia.org/wiki/Pro_Evolution_Soccer"
+                    target="_blank" rel="noopener noreferrer" class="story-link">PES</a>-nya! Liat nih si Garam nyimpen
+                apaan di atas lemari!" seru Gama, mengibaskan buku sketsa bersampul hitam milik gua seolah brosur dari
+                sales honda.</p>
+            <p>Jantung gua langsung melorot ke usus halus dan naek lagi ke usus buntu.</p>
+            <p>Aceng dan Erwin serempak menoleh dari layar TV. Mereka bertiga teman-teman tongkrongan sehidup semati
+                yang barengan masuk fase rebel-rebelnya tapi nanggung sejak kelas 11—kini mengerumuni rahasia terbesar
+                gua.</p>
+            <p>"Anjir, wibu lu ya? Umur segini masih gambar-gambar ginian? mmm.. BAU BAWANG!" tawa Aceng meledak.
+            </p> 
+            <p>Gua cuma bisa diam, mendadak kaku. Sialan. Padahal pas orientasi kelas 10 dulu, si Gama dengan bangganya
+                teriak di depan kelas kalau cita-citanya pengen jadi entrepreneur pakan kodok. Kenapa sekarang malah
+                gambar gua yang kerasa paling absurd di mata mereka?</p>
+            <p>"Ini proporsi tangannya kenapa panjang sebelah dah? Kek ranting pohon sawit," ledek Erwin, telunjuknya
+                mengetuk halaman yang susah payah gua buat.</p>
+            <p>"Tapi emang sawit pohon ya?" sela Gama, keningnya berkerut serius menatap Erwin.</p>
+            <p>Aceng langsung menoleh ke Gama. "Ya pohon lah, bego! Lu kira rumput gajah?!"</p>
+            <p>"Ya kali aja jenis palem-paleman, Ceng. Kan daunnya mirip."</p>
+            <p>Gua buru-buru merebut buku hitam itu dari tangan Erwin sebelum perdebatan botani mereka makin panjang.
+                "Udah, balikin sini! Lanjut main PES aja lu pada, nggak bakal nyampe otak lu ngebahas ginian." Gua
+                ngeles dengan nada nyolot, khas anak tongkrongan yang lagi defensive demi nutupin rasa malu.</p>
+            <p>Aslinya, kena banget sih. Di luar, gua ini Garam Laut si anak rebel nanggung. Sering nongkrong sampai
+                malam, seragam sengaja dikeluarin, corat coret tembok kantin, pura-pura ngerokok walau cuma isep-tiup
+                doang biar dibilang asik. Image itu susah payah gua bangun bertahun-tahun. Tapi di dalam kamar ini, gua
+                cuma remaja yang sangat mengagumi pencerita dibalut visual yang sangat gua gemari.</p>
+            <p>Malamnya, setelah bedebah-bedebah itu pulang, gua merenung di kasur sambil ngeliatin buku sketsa dan
+                beberapa deretan buku komik koleksi gua dilemari dengan beberapa sampul yang mulai terkelupas. Kata-kata
+                mereka muter terus di kepala, memicu overthinking stadium akhir. Gua ngerasa ada bener nya juga gua gak
+                seberbakat itu buat bikin karya sebagus seniman yang gua kagumi. Dengan tekad bulat yang didorong rasa
+                gengsi, gua masukin semua drawing pen, pensil, dan buku sketsa itu ke dalam kardus mi instan. Gua lakban
+                rapi, lalu gua lempar ke sudut paling bawah di gudang belakang rumah.</p>
+            <p>"Mulai detik ini, gua udahan," batin gua sok dramatis.</p>
+            <p>Beberapa bulan berlalu. Masa-masa SMA udah di ujung tanduk, ujian nasional udah kelar. Suasana
+                tongkrongan mendadak berubah drastis. Yang tadinya asik cengcengan club bola favorite yang kalah sama
+                cewek beda kelas, sekarang berubah jadi obrolan pusing soal pendaftaran kuliah, kerjaan, sampai
+                quarter-life crisis dini. Gama sibuk ngurusin bisnis bapaknya, Aceng dan Erwin sibuk bimbel mati-matian.
+            </p>
+            <p>Gua? Gua cuma ngerasa hampa. Ada ruang kosong tiap kali gua bengong sendirian di kamar.</p>
+            <p>Suatu sore yang gabut, tanpa alasan yang jelas, gua membuka YouTube dan meng-klik salah satu video
+                 dari kanal pandji pragiwaksono yang menyadarakan gua beberapa hal, lalu langkah gua tertuju ke gudang. Mata gua perlahan menoleh pada
+                kardus mi instan berdebu di pojokan.</p>
+            <p>Gua diam. Pikiran gua melayang jauh. Kalau gua biarin kardus ini membusuk di sini, 10 atau 20 tahun lagi,
+                setiap kali gua lewat toko buku dan ngeliat deretan komik, yang ada cuma penyesalan. Mimpi itu terbukti
+                nggak beneran mati walaupun udah gua kubur dalam-dalam. Dia cuma pingsan, nunggu buat bangun lagi dan
+                hadir dalam bentuk hantu rasa penyesalan seumur hidup gua.</p>
+            <p>Gua tarik kardus itu dan merobek lakbannya. Tangan gua ngambil satu pulpen HI-Tech favorite gua dan
+                selembar kertas bekas di tumpukan teratas.</p>
+            <p>Kali ini gua nggak berusaha menggambar anatomi rumit ala <a
+                    href="https://en.wikipedia.org/wiki/Kim_Jung_Gi" target="_blank" rel="noopener noreferrer"
+                    class="story-link">Kim Jung Gi</a>, atau merancang cerita menarik ala <a
+                    href="https://id.wikipedia.org/wiki/Tatsuki_Fujimoto" target="_blank" rel="noopener noreferrer"
+                    class="story-link">Tatsuki Fujimoto</a> yang begitu mind blow. Tangan gua bergerak sendiri,
+                menggoreskan garis-garis kasar tanpa beban. Hasilnya? Sebuah karikatur jelek. Wajah Aceng yang meleyot,
+                Erwin dengan jari mirip ranting sawit, dan Gama yang kepalanya gua gambar mirip kodok.</p>
+            <p>Gua tersenyum tipis ngeliat gambar itu.</p>
+            <p>Gua sadar, mungkin gua nggak akan jadi pembuat komik revolusioner penyembuh dunia seperti yang gua
+                bayangkan dulu. Tapi seenggaknya, pena ini udah balik ke tangan gua, dan ceritanya baru aja dimulai.</p>
+        </article>
+
+        <footer>
+            &copy; 2026 Ibnuwu.
+        </footer>
+    </div>
+
+    <script>
+        const themeToggleBtn = document.getElementById('themeToggle');
+
+        themeToggleBtn.addEventListener('click', () => {
+            document.body.classList.toggle('dark-theme');
+            if (document.body.classList.contains('dark-theme')) {
+                themeToggleBtn.innerHTML = '☀️ Mode Terang';
+            } else {
+                themeToggleBtn.innerHTML = '🌓 Mode Gelap';
+            }
+        });
+
+        window.addEventListener('scroll', () => {
+            const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (winScroll / height) * 100;
+            document.getElementById("progressBar").style.width = scrolled + "%";
+        });
+    </script>
+</body>
+
+</html>
